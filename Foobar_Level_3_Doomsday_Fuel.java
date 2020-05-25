@@ -30,7 +30,7 @@ Output: (int list) [0, 3, 2, 9, 14]
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class DoomsdayFuel {
+public class Solution {
 
 	class Fraction {
 		long n;
