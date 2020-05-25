@@ -226,12 +226,4 @@ public class Solution {
 		Solution s = new Solution(times, times_limit);
 		return s.findSolution();
 	}
-
-	public static void main(String[] args) {		
-		int[] ans = Solution.solution(new int[][] { { 1, 1, 1, 1 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 } },
-				1);
-		for (int i = 0; i < ans.length; i++) {
-			System.out.print(ans[i] + " ");
-		}
-	}
 }
