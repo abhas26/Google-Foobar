@@ -1,1 +1,1 @@
-# Google-Foobar
+# Foobar
