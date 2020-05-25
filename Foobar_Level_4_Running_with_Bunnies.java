@@ -28,7 +28,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 
-public class RunningWithBunnies {
+public class Solution {
 
 	class Path {
 		ArrayList<Integer> nl = new ArrayList<Integer>();
@@ -79,7 +79,7 @@ public class RunningWithBunnies {
 	ArrayList<Path> loopList = new ArrayList<Path>(); // loops
 	int hw;
 
-	public RunningWithBunnies(int[][] times, int times_limit) {
+	public Solution(int[][] times, int times_limit) {
 		this.times = times;
 		this.times_limit = times_limit;
 		this.hw = times.length;
@@ -223,12 +223,12 @@ public class RunningWithBunnies {
 		if (times.length < 3) {
 			return new int[0];
 		}
-		RunningWithBunnies s = new RunningWithBunnies(times, times_limit);
+		Solution s = new Solution(times, times_limit);
 		return s.findSolution();
 	}
 
 	public static void main(String[] args) {		
-		int[] ans = RunningWithBunnies.solution(new int[][] { { 1, 1, 1, 1 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 } },
+		int[] ans = Solution.solution(new int[][] { { 1, 1, 1, 1 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 } },
 				1);
 		for (int i = 0; i < ans.length; i++) {
 			System.out.print(ans[i] + " ");
