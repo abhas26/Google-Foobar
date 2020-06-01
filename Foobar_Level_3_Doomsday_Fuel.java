@@ -122,7 +122,7 @@ public class Solution {
 	int hw;
 	ArrayList<Node> nodes;
 
-	public DoomsdayFuel(int[][] pData) {
+	public Solution(int[][] pData) {
 		this.pData = pData;
 		hw = pData.length;
 		this.isTerminated = new boolean[hw];
@@ -304,6 +304,7 @@ public class Solution {
 	}
 
 	public static int[] solution(int[][] m) {
-		DoomsdayFuel s = new DoomsdayFuel(m);
+		Solution s = new Solution(m);
 		return s.findProbabilities();
 	}
+}
